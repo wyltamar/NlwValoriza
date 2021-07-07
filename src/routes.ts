@@ -47,6 +47,6 @@ router.get(
 );
 
 router.get('/tags', ensureAuthenticated, listTagsController.handle);
-router.get('/users', ensureAuthenticated, listUsersController.handle);
+router.get('/users', listUsersController.handle);
 
 export { router };
